@@ -4,6 +4,10 @@
 - `cy.visit('/')`: Orders browser to visit given URL. Cypress appends the path to the `baseUrl`. If no `baseUrl` set, specify full qualified URL.
 - `cy.title()`: Returns page title
 
+### Finding elements
+
+- `cy.get('.css-selector')`
+
 ### Assertions
 
 **Useful Links**
@@ -38,5 +42,7 @@
 
 
 
-## Angular Specific
-`ng e2e` Run Angular e2e tests
+## Angular
+- `ng e2e`: run Angular e2e tests (interactive test runner)
+- `npx cypress run`: non-interactive test runner: browser window not visible, test results visible in shell output (project needs to be running)
+- `npx cypress open`: interactive test runner (good for dev environment)
